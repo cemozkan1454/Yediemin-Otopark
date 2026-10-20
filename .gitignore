@@ -1,0 +1,38 @@
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.jks
+*.keystore
+**/application-local.properties
+**/application-prod.properties
+
+# Java / Spring Boot
+.gradle/
+**/build/
+target/
+*.class
+*.log
+
+# IntelliJ / VS Code
+.idea/
+.vscode/
+*.iml
+
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins*
+.packages
+.pub/
+coverage/
+
+# Android signing
+**/android/key.properties
+
+# Operating system
+.DS_Store
+Thumbs.db
