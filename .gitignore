@@ -1,5 +1,9 @@
 
-# Environment variables and secrets
+# ==========================================
+# YEDIEMIN - Spring Boot + Flutter
+# ==========================================
+
+# Secrets and environment variables
 .env
 .env.*
 !.env.example
@@ -8,31 +12,61 @@
 *.p12
 *.jks
 *.keystore
+*service-account*.json
+
+# Spring Boot configurations
+**/application-dev.properties
 **/application-local.properties
 **/application-prod.properties
 
-# Java / Spring Boot
-.gradle/
-**/build/
-target/
+# Java / Maven
+**/target/
 *.class
 *.log
 
-# IntelliJ / VS Code
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub/
+**/build/
+coverage/
+
+# Android
+**/android/local.properties
+**/android/key.properties
+**/android/.gradle/
+*.hprof
+
+# iOS
+**/ios/Pods/
+**/ios/Flutter/Generated.xcconfig
+
+# IDE
 .idea/
 .vscode/
 *.iml
+*.ipr
+*.iws
+.settings/
+.classpath
+.project
+.factorypath
+.sts4-cache/
 
-# Flutter / Dart
-.dart_tool/
-.flutter-plugins*
-.packages
-.pub/
-coverage/
+# Uploaded user files
+**/uploads/
 
-# Android signing
-**/android/key.properties
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
 
-# Operating system
+# Operating systems
 .DS_Store
 Thumbs.db
+desktop.ini
+
+# Flutter metadata
+.metadata
